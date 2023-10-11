@@ -1,4 +1,5 @@
 import requests
+import pprint
 
 # Set the external key
 externalKey = 'externalKey'
@@ -12,7 +13,7 @@ headers = {'Content-Type': 'application/x-www-form-urlencoded',
 
 
 # Do the HTTP request
-response = requests.post(url, headers=headers)
+response = requests.get(url, headers=headers)
 
 # Check for HTTP codes other than 200
 if response.status_code != 200:
