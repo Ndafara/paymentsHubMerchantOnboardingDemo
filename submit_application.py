@@ -13,7 +13,7 @@ headers = {'Content-Type': 'application/x-www-form-urlencoded',
            'Authorization': 'Bearer PUT_YOUR_TOKEN_HERE'}
 
 # Do the HTTP request
-response = requests.post(url, headers=headers)
+response = requests.put(url, headers=headers)
 
 # Check for HTTP codes other than 200
 if response.status_code != 200:
