@@ -7,7 +7,8 @@ external_key = 'DemoApp-123'
 
 # Set the URLs
 base_url = 'https://enrollment-api-sandbox.paymentshub.com'
-token_url = f'{base_url}/oauth/token'
+token_base_url = 'https://enrollment-api-auth.paymentshub.com'
+token_url = f'{token_base_url}/oauth/token'
 create_application_url = f'{base_url}/enroll/application'
 send_application_url = f'{base_url}/enroll/application/merchant/send/key/{external_key}'
 validate_application_url = f'{base_url}/enroll/application/validate/{external_key}'
